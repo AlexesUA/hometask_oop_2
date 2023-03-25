@@ -21,6 +21,6 @@ public class Car {
 
     @Override
     public String toString() {
-        return String.format("Рік випуску: %1$s , Колір: %2$s ");
+        return String.format("Рік випуску: %1$s , Колір: %2$s ", manufactureYear, colour);
     }
 }
