@@ -8,38 +8,23 @@ public class Car {
 
 
     public Car(){
-        manufactureYear = 1965;
-        maxSpeed = 263;
-        weight = 1320;
-        colour = "Sea Marine";
+        this(1965);
     }
 
     public Car(int manufactureYear){
-        this.manufactureYear = manufactureYear;
-        maxSpeed = 283;
-        weight = 1100;
-        colour = "Garden Green";
+        this(manufactureYear, 283);
     }
 
     public Car(double maxSpeed){
-        manufactureYear = 1970;
-        this.maxSpeed = maxSpeed;
-        weight = 1890;
-        colour = "Phantom Darck";
+        this(1970, maxSpeed);
     }
 
     public Car(int manufactureYear, double maxSpeed){
-        this.manufactureYear = manufactureYear;
-        this.maxSpeed = maxSpeed;
-        weight = 970;
-        colour = "Light Pink";
+        this(manufactureYear, maxSpeed, 970);
     }
 
     public Car(int manufactureYear, double maxSpeed, int weight){
-        this.manufactureYear = manufactureYear;
-        this.maxSpeed = maxSpeed;
-        this.weight = weight;
-        colour = "Iron Oxide";
+        this(manufactureYear, maxSpeed, weight, "Iron Oxide");
     }
 
     public Car(int manufactureYear, double maxSpeed, int weight, String colour){
